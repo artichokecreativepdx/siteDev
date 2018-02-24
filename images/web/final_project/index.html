@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>The Stylish Gentleman</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/helper.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/hamburger_menu.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+    
+
+<ul class="navigation">
+    <li class="nav-item"><a href="#">Home</a></li>
+    <li class="nav-item"><a href="#">About Our Clothes</a></li>
+    <li class="nav-item"><a href="#">Clothing</a></li>
+    <li class="nav-item"><a href="#">Contact</a></li>
+</ul>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger"></label>
+
+<div class="site-wrap">
+    <header>
+        <div class="logo">
+        <a href="#"><img src="images/sg_logo.png"></a>
+            <h1>The Clothier for the Modern Man</h1>
+        </div>
+    </header>
+    <nav>
+    <li class="nav_dt"><a href="#">Home</a></li>
+    <li class="nav_dt"><a href="#">About</a></li>
+    <li class="nav_dt"><a href="#">Clothing</a></li>
+    <li class="nav_dt"><a href="#">Contact</a></li>
+</nav>
+    <section>
+        <a href="#"><img src="images/sweater_sg.jpg"></a>
+        <a href="#"><img src="images/pants_sg.jpg"></a>
+        <a href="#"><img src="images/hats_sg.jpg"></a>
+        <a href="#"><img src="images/shoes_sg.jpg"></a>
+    </section>
+    <aside>
+        <h2>A Little Bit About Who We Are</h2>
+        <p> &quot;The Stylish Gentleman is an upscale boutique that catters to high end men's fashion, what we offer is mens clothing, shoes, belts, ties and socks. the goal of the website is to show our customers a little of what we offer but to ultimately get people to come into the store so that they can be helped by our highly trained staff to find the perfect outfit. Our store is sleek and modern with a nod  to a more dapper era when men dressed more formally&quot; </p>
+    </aside>
+    <footer>
+        <div class="findUs">
+            <h2>How To Find Us</h2>
+            <p>Hours of Operation: Thurs- Sun 11:00PM-7:00PM</p> 
+            <p>Location: 1242 Southeast 2nd Avenue, Portland, OR 97214</p>
+        </div>
+<!-- end findUs class-->
+        
+        <div class="phone">
+            <a href="tel://503-555-5555">(503) 555-5555</a>
+        </div>
+        <p><br></p>
+<!-- end phone class-->
+        
+        <div class="maps">
+           <div id="map" style="width:100%;height:300px" alt="google maps"></div>
+
+                    <script>
+                    function myMap() {
+                      var myCenter = new google.maps.LatLng(45.5140025,-122.6635321);
+                      var mapCanvas = document.getElementById("map");
+                      var mapOptions = {center: myCenter, zoom: 17};
+                      var map = new google.maps.Map(mapCanvas, mapOptions);
+                      var marker = new google.maps.Marker({position:myCenter});
+                      marker.setMap(map);
+                    }
+                    </script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+        </div>
+<!-- end maps class-->
+        
+        <div class="socialMedia">
+            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/?hl=en"><img src="images/instagram.png" alt="instagram"></a>
+            <a href="https://twitter.com/?lang=en"><img src="images/twitter.png" alt="twitter"></a>
+            <a href="https://yelp.com/?lang=en"><img src="images/yelp.png" alt="yelp"></a>
+        </div>
+<!-- end socialMedia class-->    
+    
+    </footer>
+</div>
+
+
+</body>
+</html>

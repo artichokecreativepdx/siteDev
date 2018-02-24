@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>Burrito Masala</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa:300|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/helper.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="smsPhone">
+            <p>call or text your order in at:</p>
+            <a href="sms:503-555-5555?body=503-555-5555">503-555-5555</a>
+        </div>
+<!-- end SMS class-->
+
+        <div class="logo">
+            <img src="images/Burrito_masala_logo.png" alt="Burrit masala">
+        </div>
+<!-- end logo class-->
+
+        <div class="hero">
+            <img src="images/heroBowl.jpg" width= 1500 alt="hero image">
+        </div>
+<!-- end hero class-->
+
+    </header>
+<!-- end header-->
+
+    <section>
+        <div class="order">
+            <h2>How To Order</h2>
+            <ul>
+                <li>Pick a meat or veggie item</li>
+                <li>Tell us what kind of rice you would like</li>
+                <li>Find a condiment to add to your meal</li>
+                <li>Let us know if you would like a Burrito or a bowl</li>
+                <li>Eat &amp; Enjoy</li>
+            </ul>
+        </div>
+ <!-- end order class-->
+        <div class="menu">
+
+            <div class="meat">
+                <h2>Meat Options</h2>
+                <img src="images/meat.png" alt="meat image">
+                <p>Chicken Tikka Masala</p>
+                <p>Lamb Curry</p>
+                <p>Pork in salsa verde</p>
+            </div>
+<!-- end meat class-->
+
+            <div class="veg">
+                <h2>Vegetarian Options</h2>
+                 <img src="images/veg.png" alt="veg image">
+                <p>Sambar (lentil curry, vegan)</p>
+                <p>Aloo gobi masala (potato and cauliflower, vegan)</p>
+                <p>Chile relleno (vegetarian, contains cheese)</p>
+            </div>
+<!-- end veg class-->
+
+            <div class="rice">
+                <h2>Rice (all vegan)</h2>
+                 <img src="images/rice.png" alt="rice image">
+                <p>Kerala biryani</p>
+                <p>Spanish rice</p>
+                <p>White or brown rice (khaima)</p>
+            </div>
+<!-- end rice class-->
+
+            <div class="side">
+                <h2>Toppings</h2>
+                <img src="images/side.png" alt="side image">
+                <p>Mango Chutney</p>
+                <p>Tomatillo Salsa</p>
+                <p>Raita</p>
+                <p>Grandma Nena’s Fiery Red Salsa Cheese</p>
+                <p>Sour cream</p>
+                <p>Onions</p>
+                <p>Tomatoes</p>
+                <p>Cucumbers</p>
+                <p>Cilantro</p>
+                <p>Guacamole ($.75 extra!)</p>
+            </div>
+<!-- end side class-->
+        <h2 class="about">About the Chefs</h2>
+        <p><em>We’re run by a husband and wife team (James Beard award winning chefs Prasad Varma and Ramona Varma Hernandez).</em></p>
+        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+        <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+        </div>
+<!-- end about class-->
+
+    </section>
+<!-- end section-->
+
+    <footer>
+        <div class="findUs">
+            <h2>How To Find Us</h2>
+            <p>Hours of Operation: Open 7 days a week, 11:00 AM to 7:00 PM</p>
+            <p>Location: Corner of SW 3rd and Alder, Portland OR</p>
+        </div>
+<!-- end findUs class-->
+
+        <div class="phone">
+            <p>Number for phone orders (texts accepted): 503-555-5555</p>
+        </div>
+<!-- end phone class-->
+
+        <div class="maps">
+           <div id="map" style="width:100%;height:300px" alt="google maps"></div>
+
+                    <script>
+                    function myMap() {
+                      var myCenter = new google.maps.LatLng(45.518919, -122.675169);
+                      var mapCanvas = document.getElementById("map");
+                      var mapOptions = {center: myCenter, zoom: 17};
+                      var map = new google.maps.Map(mapCanvas, mapOptions);
+                      var marker = new google.maps.Marker({position:myCenter});
+                      marker.setMap(map);
+                    }
+                    </script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+        </div>
+<!-- end maps class-->
+
+        <div class="socialMedia">
+            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/?hl=en"><img src="images/instagram.png" alt="instagram"></a>
+            <a href="https://twitter.com/?lang=en"><img src="images/twitter.png" alt="twitter"></a>
+            <a href="https://yelp.com/?lang=en"><img src="images/yelp.png" alt="yelp"></a>
+        </div>
+<!-- end socialMedia class-->
+
+    </footer>
+<!-- end footer-->
+
+</body>
+</html>

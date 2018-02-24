@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Grendel's Coffee Shop</title>
+<link href="styles/styles.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-2.2.3.min.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(45.523047, -122.657823),
+          zoom: 18,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+
+<body>
+<wrapper>
+<header>
+<img src="images/grendels_logo.png" class="logo">
+</header>
+<section class="store_hours">
+<img src="images/storefront.jpg" width="400" height="433" alt="outside grendel's"/>
+<p>We are located at</p>
+<p>729 E Burnside St #107, Portland, OR 97214<br>
+  (503) 595-9550</p>
+<p><a href="mailto:me.maldy@gmail.com" class="link">contact us!</a></p>
+<p>Connect to us via</p>
+<p><img src="images/soc-facebook.png" width="25" height="25" alt="facebook"/></p>
+<p>&nbsp;</p>
+</section>
+ 
+    
+<section class= "about_us">
+    <a class="about_us"><a>
+<h2>Located in the beautiful East Burn area</h2>
+<p>Grendel's Coffee shop is located conveniently on the 700th block of East Burnside, just a hop skip and a jump away from the  Jupiter Hotel.</p>
+<p>We proudly serve <a href="https://thundermuck.com" target="new" class="link"><em>Columbia River Roasters</em></a>, coffee beans and delicious pasteries from <a href="http://www.pearlbakery.com" target="new" class="link"><em>Pearl bakery</em></a>.</p>
+<p><div id="map-canvas">
+    </div>
+    </section>
+<section class="our_beans">
+    <a class="our_beans"><a>
+<p>&nbsp;</p>
+  <h3>We proudly serve Columbia River Coffee</h3>
+  <h2>Creature Comforts (Organic)</h2>
+<p>380 different species of migratory birds, small mammals and insects live comfortably in and below the shade tree canopy that grows over the coffee plantations of El Salvador. Then we add some WONDERMUCK! and a little Sumatran, balancing smoke and body.</p>
+<h2>Jonny Tsunami</h2>
+<p>Our newest espresso blend. Backing off on the darkness to allow for a more complex shot of espresso, Jonny Tsunami is a blend of African, Indonesian and South American Coffees. Made almost entirely with direct trade beans, it has a smooth, rich buttery flavor, and a good, full body. Works beautifully as an espresso or a french press.</p>
+<h2>THUNDERMUCK!</h2>
+<p>DARK • FULL BODY • MEDIUM ACIDITY • </p>
+<p>A complex blend of coffees from Central American, South American and Indonesia. Roasted to the edge of darkness to give it a rich, smooth, smokey and balanced flavor. Full-Bodied with a Medium Acidity.</p>
+<h2>El Salvador</h2>
+<p> Medium (Direct Trade, Shade Grown)</p>
+<p> Grown at a high elevation in volcanic soil. Shade grown, Medium Roast. Sweet and floral flavor with a caramel smooth finish.  We buy this coffee directly from the Menendez family who grows it.  They have been growing coffee in the Apaneca-Llamatepec Mountains in El Salvador for 4 generations.</p>
+    </section> 
+    <section class="menu">
+        <a class="menu"><a>
+        <h2>Grendels menu items</h2>
+<p>Call in orders are welcome as we are busy at lunch times.<br>
+  <a href="assets/sandwich menu 2012.pdf" class="link">Here</a> is a pdf of our sandwich sheet to get you started</p>
+
+
+
+            <h2>Specialty drinks</h2>
+    
+      <p>Beowulf Forest Mocha
+          <br>
+          Espresso, chocolate, raspberry syrup and a dash of orange syrup.</p>
+     
+    <p>Grendel's Ghost
+        <br>
+        A shot of white espresso (triple the caffeine), a shot of regular espresso, white chocolate & steamed milk.M</p>
+    <p>Mayan Mocha
+        <br>
+        Spicy chocolate with a hint of cinnamon.</p>
+    <p>Maple Cinnamon latte
+            <br>
+    Maple and cinnamon syrups combined to create the flavor of french toast.</p>
+    <h2>Breakfast Sandwiches</h2>
+      <p>Served on an English Muffin<br>
+Your Choice of Meat<br>
+( Sausage, Bacon, Ham, Turkey &amp;
+Field Roast SDT )<br>
+And choice of cheese<br>
+( Cheddar, Swiss, Provolone &amp; Pepper Jack )<br>
+(Substitute Bagel)</p>
+            <h2>Sandwich Choices</h2>
+    
+      <p><b>Baked Ham, Turkey, Salami, **Veggie**,
+Roast Beef, Tuna Salad, Field Roast SDT</b><br>
+All sandwiches come with:<br>
+Breads: wheat, sour dough, light rye or white<br>
+Cheese: cheddar, swiss, provolone &amp; pepper jack<br>
+Veggies: lettuce, mixed greens, tomato
+cucumber, black olives, red onion,
+pickles, spicy banana peppers, avocado,
+roasted red peppers, sun dried tomatoes, hummus<br>
+          condiments: mustard, mayo &amp; horseradish.</p>
+     
+            <p>Half w/cup soup - $ 6.50</p>
+    <h2>Bagels</h2>
+            <p>Our bagels come from <a href="http://www.broadwaybagels.org/">Broadway Bagels</a>, a wholesaler out of Portland,OR</p>
+      <p><em>Plain - Onion - Garlic - Raisin and cinnamon -
+Sesame - Everything - Asiago - Jalepeno cheddar -
+          Poppy - Cheddar - Herb - Wheat</em></p>
+      
+      <p>Add Cream cheese, hummus,
+        peanut butter or jelly.<br>
+      Tofutti available</p>
+            <h2>Soup of the Day</h2>
+            <p>Rotates daily, ask barista for information</p>
+    </section>
+    <section class="contact">
+        <a ="contact"><a>
+    <h2> Interested in having your artwork shown at Grendel's?</h2>
+<p>Drop us an email and provide us with a link to your work and we <em>will</em> get back to you.</p>
+	<div class="form">
+<form id="form1" name="form1" method="post">
+  <p>
+    <label for="textfield">Name:</label>
+    
+    <input name="textfield" type="text" id="textfield" placeholder="your name" title="name">
+    </p>
+  <p>
+    
+    <label for="email">Email:</label>
+    <input name="email" type="email" id="email" placeholder="yourname@email.com" title="email">
+    </p>
+  <p>
+    
+    <label for="textarea">Brief artist statement
+with link:<br>
+    </label>
+    <textarea name="textarea" maxlength="500" id="textarea"></textarea>
+    </p>
+  <p>
+    
+    <input type="submit" name="submit" id="submit" value="Submit">
+    </p>
+  <p>&nbsp;</p>
+</form>
+	</div><!--end form div-->
+    </section>
+
+<footer>
+    <p>Website designed by <a href="assets/personal website/home.html" target="new" class="link">Megan Maldonado</a></p>
+</footer>
+        </wrapper>
+</body>
+</html>
